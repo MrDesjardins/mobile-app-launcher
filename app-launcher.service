@@ -1,0 +1,14 @@
+[Unit]
+Description=Mobile App Launcher Web Server
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/home/miste/code/mobile-app-launcher
+ExecStart=/usr/bin/env uv run python -m http.server 80
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
