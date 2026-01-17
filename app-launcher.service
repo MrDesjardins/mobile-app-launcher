@@ -6,7 +6,7 @@ After=network.target
 Type=simple
 User=root
 WorkingDirectory=/home/pdesjardins/code/mobile-app-launcher
-ExecStart=/usr/bin/env uv run python -m http.server 80
+ExecStart=/home/pdesjardins/.local/bin/uv run python -m http.server 80
 Restart=always
 RestartSec=10
 
