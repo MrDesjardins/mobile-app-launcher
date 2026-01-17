@@ -5,7 +5,7 @@ After=network.target
 [Service]
 Type=simple
 User=root
-WorkingDirectory=/home/miste/code/mobile-app-launcher
+WorkingDirectory=/home/pdesjardins/code/mobile-app-launcher
 ExecStart=/usr/bin/env uv run python -m http.server 80
 Restart=always
 RestartSec=10
