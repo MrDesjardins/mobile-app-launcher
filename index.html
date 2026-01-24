@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -70,12 +71,16 @@
         }
 
         @keyframes float {
-            0%, 100% {
+
+            0%,
+            100% {
                 transform: translate(0, 0) scale(1);
             }
+
             33% {
                 transform: translate(50px, -50px) scale(1.1);
             }
+
             66% {
                 transform: translate(-30px, 30px) scale(0.9);
             }
@@ -105,9 +110,12 @@
         }
 
         @keyframes glow-pulse {
-            0%, 100% {
+
+            0%,
+            100% {
                 filter: drop-shadow(0 0 20px rgba(102, 126, 234, 0.5));
             }
+
             50% {
                 filter: drop-shadow(0 0 30px rgba(102, 126, 234, 0.8));
             }
@@ -246,10 +254,13 @@
         }
 
         @keyframes pulse {
-            0%, 100% {
+
+            0%,
+            100% {
                 opacity: 1;
                 transform: scale(1);
             }
+
             50% {
                 opacity: 0.6;
                 transform: scale(1.2);
@@ -274,6 +285,7 @@
         }
     </style>
 </head>
+
 <body>
     <div class="background-animation">
         <div class="glow-orb orb-1"></div>
@@ -292,28 +304,30 @@
         </div>
 
         <div class="apps-grid">
-            <a href="http://10.0.0.181:8801" class="app-card" target="_blank">
-                <div class="app-icon">🎵</div>
-                <div class="app-title">Audio Stream Google Home</div>
-                <div class="app-port">Port: 8801</div>
+            <a href="http://10.0.0.181:19999" class="app-card" target="_blank">
+                <div class="app-icon">📊</div>
+                <div class="app-title">Netdata</div>
+                <div class="app-port">Port: 19999</div>
             </a>
-
             <a href="http://10.0.0.181:8000" class="app-card" target="_blank">
                 <div class="app-icon">📻</div>
                 <div class="app-title">Youtube Radio</div>
                 <div class="app-port">Port: 8000</div>
             </a>
-
-            <a href="http://10.0.0.181:8080" class="app-card" target="_blank">
-                <div class="app-icon">📝</div>
-                <div class="app-title">Trilium Web Portal</div>
-                <div class="app-port">Port: 8080</div>
-            </a>
-
             <a href="http://10.0.0.181:8081" class="app-card" target="_blank">
                 <div class="app-icon">🤖</div>
                 <div class="app-title">Trilium AI Web</div>
                 <div class="app-port">Port: 8081</div>
+            </a>
+            <a href="http://10.0.0.181:8801" class="app-card" target="_blank">
+                <div class="app-icon">🎵</div>
+                <div class="app-title">Audio Stream Google Home</div>
+                <div class="app-port">Port: 8801</div>
+            </a>
+            <a href="http://10.0.0.181:8080" class="app-card" target="_blank">
+                <div class="app-icon">📝</div>
+                <div class="app-title">Trilium Web Portal</div>
+                <div class="app-port">Port: 8080</div>
             </a>
         </div>
 
@@ -322,4 +336,5 @@
         </footer>
     </div>
 </body>
+
 </html>
