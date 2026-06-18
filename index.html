@@ -242,6 +242,34 @@
             opacity: 0.8;
         }
 
+        .app-actions {
+            position: relative;
+            z-index: 1;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-top: 18px;
+        }
+
+        .app-action {
+            display: block;
+            padding: 10px 12px;
+            border-radius: 10px;
+            color: #ffffff;
+            font-size: 0.9rem;
+            font-weight: 600;
+            text-align: center;
+            text-decoration: none;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            transition: all 0.2s ease;
+        }
+
+        .app-action:hover {
+            background: rgba(255, 255, 255, 0.18);
+            transform: translateY(-2px);
+        }
+
         .status-indicator {
             display: inline-block;
             width: 8px;
@@ -314,11 +342,15 @@
                 <div class="app-title">Service Logs</div>
                 <div class="app-port">Port: 8092</div>
             </a>
-            <a href="http://10.0.0.181:8000" class="app-card" target="_blank">
+            <div class="app-card">
                 <div class="app-icon">📻</div>
                 <div class="app-title">Youtube Radio</div>
-                <div class="app-port">Port: 8000</div>
-            </a>
+                <div class="app-port">HTTP: 8000 • HTTPS: 8443</div>
+                <div class="app-actions">
+                    <a href="http://10.0.0.181:8000" class="app-action" target="_blank">HTTP</a>
+                    <a href="https://10.0.0.181:8443" class="app-action" target="_blank">HTTPS</a>
+                </div>
+            </div>
             <a href="http://10.0.0.181:8081" class="app-card" target="_blank">
                 <div class="app-icon">🤖</div>
                 <div class="app-title">Trilium AI Web</div>

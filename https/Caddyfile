@@ -1,0 +1,17 @@
+{
+	auto_https disable_redirects
+	servers {
+		# Keep Caddy off UDP :443 because another service on this mini-PC uses it.
+		protocols h1 h2
+	}
+}
+
+https://10.0.0.181, https://10.66.66.1 {
+	tls internal
+	reverse_proxy 127.0.0.1:80
+}
+
+https://10.0.0.181:8443, https://10.66.66.1:8443 {
+	tls internal
+	reverse_proxy 127.0.0.1:8000
+}
